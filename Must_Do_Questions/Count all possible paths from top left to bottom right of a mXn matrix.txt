@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int m,n;
+    cin>>m;
+    cin>>n;
+    int path =1;
+    for(int i=n;i<(n+m-1);i++)
+    {
+        path=path*i;
+        path=path/(i-n+1);
+    }
+    cout<<path;
+    return 0;
+}
