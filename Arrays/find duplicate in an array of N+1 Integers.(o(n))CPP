@@ -1,0 +1,26 @@
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        bool found[50000];
+        int res=-1;
+        for(int i=0;i<50000;i++)
+        {
+            found[i]=false;
+        }
+        for(int j=nums.size()-1;j>=0;j--)
+        {
+        
+            if(found[nums[j]]==false)
+            {
+            found[nums[j]]=true;
+            
+            }
+            else
+            {
+            res=j;
+                }
+        }
+       
+       return nums[res]; 
+    }
+};
