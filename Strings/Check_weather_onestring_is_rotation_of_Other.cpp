@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include<bits/stdc++.h>
+#include <string.h>
 using namespace std;
 int main()
 {
-    string str;
-    
-    cin>>str;
-    string str2;
-    cin>>str2;
-    string temp=str+str2;
-    if(str.length()!=str2.length())
+string str1,str2;
+cout<<"Enter first string";
+cin>>str1;
+cout<<"Enter second string";
+cin>>str2;
+string temp=str1+str1;
+if(str1.length()!=str2.length())
     {
         cout<<"Not rotated";
     }
-    else if(temp.find(str2))
-    {
-        cout<<"Rotated String";
-    }
-    else
-    {
-        cout<<"Not rotated";
-    }
-    return 0;
+if(temp.find(str2)!= string::npos)
+{
+    cout<<"Yes";
+}
+else
+{
+    cout<<"No";
+}
 }
