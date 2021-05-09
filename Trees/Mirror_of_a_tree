@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct node{
+    int key;
+    node *left;
+    node *right;
+    node(int k)
+    {
+        key=k;
+        left=right=NULL;
+    }
+};
+void inorder(node *root)
+{
+    
+    if(root!=NULL)
+    {
+        inorder(root->left);
+        
+        cout<<root->key<<" ";
+        inorder(root->right);
+    }
+    
+}
+node* mirror(node *root)
+{
+    swap(root->left,root->right);
+    if(root->left)
+        mirror(root->left);
+    if(root->right)
+        mirror(root->right);
+    return root;
+}
+
+int main()
+{
+    node *head=new node(2);
+    head->left=new node(1);
+    head->right=new node(8);
+    head->left->left=new node(12);
+    head->right->right=new node(9);
+    inorder(head);
+    cout<<'\n';
+    mirror(head);
+    cout<<'\n';
+    inorder(head);
+    return 0;
+}
