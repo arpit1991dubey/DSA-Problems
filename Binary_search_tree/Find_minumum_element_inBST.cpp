@@ -1,4 +1,4 @@
-//Function to find the minimum element in the given BST.
+//find the minimum element in the given BST.
 int minValue(Node* root)
 {
     Node* current = root; 
