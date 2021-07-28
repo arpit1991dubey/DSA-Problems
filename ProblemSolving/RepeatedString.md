@@ -1,3 +1,6 @@
+## Problem link - https://www.hackerrank.com/challenges/repeated-string/problem?isFullScreen=true
+# C++ solution below
+```
 long repeatedString(string s, long n) {
 
     int len=s.length();
@@ -10,3 +13,4 @@ long repeatedString(string s, long n) {
     
     return count;
 }
+```
