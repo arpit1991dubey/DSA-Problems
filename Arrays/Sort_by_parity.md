@@ -1,7 +1,7 @@
 ## Question link- https://leetcode.com/problems/sort-array-by-parity/
 
 #Solution-:
-
+```
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& nums) {
@@ -18,3 +18,4 @@ public:
         return nums;
     }
 };
+```
