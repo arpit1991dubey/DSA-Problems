@@ -1,7 +1,7 @@
 ## Problem Link- https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
 
 # Solution-:
-
+```
 class Solution {
 public:
     vector<int> replaceElements(vector<int>& arr) {
@@ -24,3 +24,4 @@ public:
         return num;
     }
 };
+```
