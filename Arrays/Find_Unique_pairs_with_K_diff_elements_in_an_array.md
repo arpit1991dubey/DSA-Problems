@@ -1,6 +1,7 @@
 ## Question link- https://leetcode.com/problems/k-diff-pairs-in-an-array/
 # Solution-:
-``
+
+```
 class Solution {
 public:
     int findPairs(vector<int>& nums, int k) {
