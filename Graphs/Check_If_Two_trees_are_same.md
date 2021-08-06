@@ -1,6 +1,7 @@
 ## Problem Link - https://leetcode.com/problems/same-tree/
 
 # Solution-:
+```
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -45,3 +46,4 @@ public:
         return true;
     }
 };
+```
