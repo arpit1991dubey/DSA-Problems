@@ -23,3 +23,16 @@ int main()
 
     return 0;
 }
+
+
+/*
+vector<int> rotateLeft(int d, vector<int> arr) {
+    vector<int>rotated(arr.size());
+    int j=0;
+    int n=arr.size();
+    for(int i=d; i<n+d && j<n;i++)
+    {
+        rotated[j++]=arr[i%n];
+    }
+return rotated;
+}*/
